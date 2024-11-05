@@ -1,0 +1,147 @@
+/* General body styling */
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #eee;
+}
+
+/* Menu styling */
+.menu {
+    width: 100%;
+}
+
+/* Search bar styling */
+.search {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 100vh; /* Fill the viewport height */
+    border-radius: 8px;
+}
+
+/* Map section styling */
+.map {
+    background-color: red;
+    width: 50%;
+    height: 100%; /* Fill the container height */
+    border-radius: 8px;
+    margin-right: 4px;
+    overflow: hidden; /* Handle overflow content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Results section styling */
+.results {
+    background-color: white;
+    width: 50%;
+    height: 100%; /* Fill the container height */
+    overflow: hidden; /* Handle overflow content */
+    border-radius: 8px;
+    margin-left: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+/* Individual result item styling */
+.result-item {
+    display: flex;
+    width: 96%;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Result item info styling */
+.result-item-info {
+    padding: 10px;
+    margin: 0;
+}
+
+.result-item-info h2 {
+    margin: 0;
+}
+
+/* Result item image styling */
+.result-item-image img {
+    height: 120px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Result address styling */
+.result-address {
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 0;
+}
+
+/* Availability image styling */
+.availability-image {
+    width: 16px;
+    height: 16px;
+    margin: 8px 0px 8px 0px;
+}
+
+/* Availability badge styling */
+.availability {
+    display: flex;
+    vertical-align: middle;
+    padding: 5px 12px 5px 10px;
+    margin: 10px 2px;
+    border-radius: 24px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+/* Available status styling */
+.available-yes {
+    background-color: rgb(54, 169, 54);
+}
+
+.available-no {
+    background-color: rgb(169, 54, 54);
+}
+
+/* Availability image adjustments */
+.availability-image {
+    padding-right: 5px;
+    padding-top: 2px;
+    margin: 0;
+    filter: invert(1);
+}
+
+/* Availability text styling */
+.availability span {
+    color: white;
+    height: 100%;
+    padding-top: 2px;
+    transform: translateY(-2px);
+}
+
+/* Green tick styling */
+.green-tick {
+    fill: green;
+}

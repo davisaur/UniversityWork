@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skip App - Web App Assignment</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"></div>
+        <div class="search">
+            <form action="search.php" method="get">
+                <input type="text" name="search" placeholder="Search for a skip">
+                <!-- <button type="submit">Search</button> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="map">
+            <iframe
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmFNNnNElOWb8A34LTaWLsRVSRKhwMVdQ
+                    &q=University+of+Brighton,Brighton+and+Hove,UK">
+            </iframe>
+        </div>
+        <div class="results">
+            <!-- RESULTS BEGIN HERE -->
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip1.jpg" alt="Skip Image">
+                </div>
+                <div class="result-item-info">
+                    <h2>University of Brighton</h2>
+                    <p class="result-address">Lewes Rd, Moulsecoomb, Brighton and Hove, Brighton BN2 4GJ</p>
+                    <div class="availability available-yes">
+                        <img src="images/tick-circle.svg" alt="" class="availability-image green-tick">
+                        <span>AVAILABLE</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip2.jpg" alt="Skip Image">
+                </div>
+                <div class="result-item-info">
+                    <h2>Bevendean Crescent</h2>
+                    <p class="result-address">Bevendean Crescent, Brighton and Hove, Brighton BN2 4RD</p>
+                    <div class="availability available-no">
+                        <img src="images/cross-circle.svg" alt="" class="availability-image green-tick">
+                        <span>TAKEN</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip3.jpg" alt="Skip Image">
+                </div>
+                <div class="result-item-info">
+                    <h2>Elm Grove</h2>
+                    <p class="result-address">Elm Grove, Brighton and Hove, Brighton BN2 3ES</p>
+                    <div class="availability available-yes">
+                        <img src="images/tick-circle.svg" alt="" class="availability-image green-tick">
+                        <span>AVAILABLE</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip4.webp" alt="Skip Image">
+                </div>
+                <div class="result-item-info">
+                    <h2>Barrow Hill</h2>
+                    <p class="result-address">Barrow Hill, Moulsecoomb, Brighton and Hove, Brighton BN1 7FF</p>
+                    <div class="availability available-yes">
+                        <img src="images/tick-circle.svg" alt="" class="availability-image green-tick">
+                        <span>AVAILABLE</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip5.jpg" alt="Skip Image">
+                </div>
+                <div class="result-item-info">
+                    <h2>Hollingdean Road</h2>
+                    <p class="result-address">Hollingdean Rd, Brighton and Hove, Brighton BN2 4AA</p>
+                    <div class="availability available-no">
+                        <img src="images/cross-circle.svg" alt="" class="availability-image green-tick">
+                        <span>TAKEN</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <div class="result-item-image">
+                    <img src="/images/skip6.jpg" alt="Skip Image">
+                </div>s
+                <div class="result-item-info">
+                    <h2>Bear Road</h2>
+                    <p class="result-address">Bear Rd, Brighton and Hove, Brighton BN2 4DA</p>
+                    <div class="availability available-no">
+                        <img src="images/cross-circle.svg" alt="" class="availability-image green-tick">
+                        <span>TAKEN</span>
+                    </div>
+                    <!-- <p class="result-address">extra information</p> -->
+                </div>
+            </div>
+            <!-- RESULTS END HERE -->
+        </div>
+    </div>
+</body>
+</html>
