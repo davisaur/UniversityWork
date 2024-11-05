@@ -24,3 +24,4 @@ app.get('/api', (req, res) => {
 app.post('/api', (req, res) => {
     res.send(`ID: ${req.body.id}, VAL: ${req.body.val}`);
 }
+

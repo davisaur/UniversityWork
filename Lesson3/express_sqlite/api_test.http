@@ -7,16 +7,19 @@ oid=12345678X&name=testname&comment=hello%20comment
 ### POST wrong format param
 POST http://localhost:3000/express_api
 Content-Type: application/x-www-form-urlencoded
-oid=12345678-XXX&name=name2&comment=hello%20comment
+
+oid=12345678X-XXX&name=%23name2&comment=hello%20comment
 
 ### POST wrong size param
 POST http://localhost:3000/express_api
 Content-Type: application/x-www-form-urlencoded
+
 oid=12345678Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&name=%23name2&comment=hello%20comment
 
 ### POST missing param
 POST http://localhost:3000/express_api
 Content-Type: application/x-www-form-urlencoded
+
 oid=12345678X&comment=hello%20comment
 
 ### GET
