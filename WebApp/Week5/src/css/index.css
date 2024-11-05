@@ -1,0 +1,534 @@
+
+/*-----------------------------------------------------------------GRID--------------------------------------------------------------------------------*/
+
+.body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-areas:
+      "heading" "hero" "intro" "persona1" "persona1text" "persona2" "persona2text" "persona3"
+      "persona3text" "diagram" "colors" "colorstext" "logo" "logotext" "font" "fonttext"
+      "process" "notebook" "computer" "sketch" "wireframe" "conclusion" "flow"
+      "screens" "profiletext" "form" "references" "footer";
+}
+
+#heading {grid-area: heading;}
+#hero {grid-area: hero;}
+#intro {grid-area: intro;}
+#persona1 {grid-area: persona1;}
+#persona1text {grid-area: persona1text;}
+#persona2 {grid-area: persona2;}
+#persona2text {grid-area: persona2text;}
+#persona3 {grid-area: persona3;}
+#persona3text {grid-area: persona3text;}
+#diagram {grid-area: diagram;}
+#colors {grid-area: colors;}
+#colorstext {grid-area: colorstext;}
+#logo {grid-area: logo;}
+#logotext {grid-area: logotext;}
+#font {grid-area: font;}
+#fonttext {grid-area: fonttext;}
+#process {grid-area: process;}
+#notebook {grid-area: notebook;}
+#computer {grid-area: computer;}
+#sketch {grid-area: sketch;}
+#wireframe {grid-area: wireframe;}
+#conclusion {grid-area: conclusion;}
+#flow {grid-area: flow;}
+#screens {grid-area: screens;}
+#footer {grid-area: footer;}
+#profile {grid-area: profile;}
+#profiletext {grid-area: profiletext;}
+#form {grid-area: form;}
+#references {grid-area: references;}
+
+#intro, #process, #conclusion, #form, #references {background: #f0f0f0;}
+#footer {background: #000000;}
+
+/*-----------------------------------------------------------------CONTACT-------------------------------------------------------------------------*/
+
+fieldset {
+    margin: 120px 20px 0px;
+	padding: 2em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+textarea {
+	height: 10em;
+}
+
+#contact {
+	display: block;
+}
+
+#loading {
+	display: none;
+	text-align: center;
+	padding-top: 9em;
+}
+
+#success {
+	display: none;
+	text-align: center;
+	padding-top: 10em;
+}
+
+#error {
+	display: none;
+	text-align: center;
+	padding-top: 10em;
+}
+
+#error #errortext {
+	color: #ff0000;
+}
+
+.hint {
+	display: none;
+	color: #ff0000;
+}
+
+#references {
+  padding: 20px;
+  color: #949494;
+}
+
+/*--------------------------------------------------------TEXT BREAKS ON PROJECT PAGES----------------------------------------------------------------*/
+
+.centertext {
+  text-align: center;
+  color: #383838;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 80px;
+}
+
+.centersubtext {
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 0px 20px 140px;
+    max-width: 720px;
+    margin: auto;
+}
+
+/*-----------------------------------------------------------------TOP NAV----------------------------------------------------------------------------*/
+
+.logo { 
+  float: left;
+  padding-right: 60px;
+  color: #383838;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px; 
+  padding: 12px 0px 8px 20px;
+}
+
+.topnav { 
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a { 
+  float: right;
+  display: block;
+  color: #383838;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon { 
+  display: none;
+}
+
+.dropdown { 
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: #383838;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+
+}
+
+.dropdown-content { 
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a { 
+  float: none;
+  color: #383838;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn { 
+  background-color: #555;
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover { 
+  background-color: #ddd;
+  color: #383838;
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block;
+}
+
+@media screen and (max-width: 600px) { 
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;} 
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*-----------------------------------------------------------------FOOTER-----------------------------------------------------------------------------*/
+
+h2 {
+  padding-left:20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+/*-----------------------------------------------------------------BANNER-----------------------------------------------------------------------------*/
+
+.hero { 
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#hero-a, #hero-b { 
+  height: 100vh;
+}
+
+#hero-a2, #hero-b2 {
+  height: 560px;
+}
+
+#hero-a, #hero-a2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 0, 0, 0.301)), url('background_images/hero.png');
+}
+
+#hero-b, #hero-b2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('background_images/hero-b.png');
+}
+
+#hero-austin {
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('background_images/austin.png');
+}
+
+.hero-text, .hero-text2 { 
+  text-align: left;
+  position: absolute;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.hero-text {
+  top: 65%;
+}
+.hero-text2 {
+  top: 47%;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 0%;
+}
+
+h5 {
+  font-weight: lighter;
+  font-size: 24px;
+  padding-top: 0px;
+  margin: 15px 0px 30px;
+}
+
+.button { 
+  font-size: 16px;
+  padding: 10px 25px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover { 
+  background-color: #ffffff;
+  color: #383838;
+}
+
+/*-----------------------------------------------------------------BLOCK IMAGES--------------------------------------------------------------------------*/
+
+#persona1, #persona1text, #persona2, #persona2text, #persona3, #persona3text, 
+#colors, #colorstext, #logo, #logotext, #font, #fonttext { /*-- seperate IDs due to individual padding modifications for responsiveness --*/
+  display: grid;
+  justify-content: center;
+}
+
+#persona1, #persona2, #persona3, #colors, #logo, #font {
+  padding-top: 60px;
+}
+#persona1text, #persona2text, #persona3text, #colorstext, #logotext, #fonttext {
+  padding-top: 20px;
+}
+
+#persona3text, #fonttext {
+  padding-bottom: 60px;
+}
+
+.block-image {
+  width: 280px;
+  height:280px;
+}
+
+h6 {
+  font-weight: lighter;
+  color: #383838;
+  font-size: 16px;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+h3 {
+  font-weight: bold;
+  color: #383838;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+  height:24px;
+}
+
+/*-----------------------------------------------------------------IMAGES-----------------------------------------------------------------------------*/
+
+.fullscaleimage {
+  width: 100%;
+}
+
+/*-----------------------------------------------------------------NEXT/PREVIOUS-----------------------------------------------------------------------*/
+
+.nextprev { 
+  display: block;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+}
+
+.previous { 
+  float: left;
+}
+
+.next { 
+  float: right;
+}
+
+.previous, .next { 
+  margin: 20px;
+  text-decoration: none;
+  padding: 1px 15px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+}
+  
+.previous:hover, .next:hover { 
+  background-color: #ddd;
+  color: rgb(56, 56, 56);
+}
+
+/*-----------------------------------------------------------------GRID<620PX-----------------------------------------------------------------------*/
+  
+@media print, screen and (min-width: 620px) {
+    .body { 
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "heading  heading" "hero  hero" "intro  intro" "persona1  persona1text" "persona2  persona2text"
+            "persona3  persona3text" "diagram  diagram" "colors  colorstext" "logo  logotext" "font fonttext"
+            "process  process" "notebook  notebook" "computer  computer" "sketch  sketch"
+            "wireframe  wireframe" "conclusion  conclusion" "flow  flow" "screens  screens"
+            "profiletext  profiletext" "form  form" "references references" "footer  footer";
+    }
+
+    .centersubtext {
+      font-size: 20px;
+    }
+
+    h1 {
+    font-size: 32px;
+    }
+
+    #persona1, #persona2, #persona3, #colors, #logo, #font {
+      justify-content: right;
+      padding-right: 20px;
+    }
+
+    #persona1text, #persona2text, #persona3text, #colorstext, #logotext, #fonttext {
+      padding: 120px 20px 0px;
+      justify-content: left;
+      height: 100px;
+    }
+
+    #persona3, #font {
+      padding-bottom: 60px;
+    }
+
+    h4 {
+      font-size: 80px;
+    }
+
+    .hero-text2 {
+      top: 37%;
+    }
+
+    .hero-text {
+      top: 60%;
+    }
+}
+
+/*-----------------------------------------------------------------GRID<915PX-----------------------------------------------------------------------*/
+
+@media screen and (min-width: 915px) { 
+    .body { 
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-areas:
+            "heading  heading  heading" "hero  hero  hero" "intro  intro  intro" "persona1  persona2  persona3"
+            "persona1text persona2text persona3text" "diagram  diagram  diagram" "colors  logo  font"
+            "colorstext  logotext  fonttext" "process  process  process" "notebook  wireframe  wireframe" 
+            "computer  wireframe  wireframe" "sketch  wireframe  wireframe" "conclusion  conclusion  conclusion"
+            "flow  flow  flow" "screens  screens  screens" "profiletext  profiletext  profiletext"
+            "form  form  form" "references references references" "footer  footer  footer";
+  }
+
+    #persona1, #persona2, #persona3, #logo, #colors, #font {
+      padding-top: 120px;
+    } 
+
+    #persona1text, #persona2text, #persona3text, #logotext, #colorstext, #fonttext {
+      padding-bottom: 120px;
+    } 
+
+    #persona1, #colors {
+      justify-content: right;
+      padding-right: 20px;
+    }
+
+    #persona2, #logo {
+      justify-content: center;
+      padding-right: 0px;
+    }
+
+    #persona3, #font {
+      justify-content: left;
+      padding: 120px 0px 0px 20px;
+    }
+
+   #persona1text, #colorstext {
+      padding: 20px 20px 0px;
+      justify-content: right;
+    }
+
+    #persona2text, #logotext {
+      padding: 20px 0px 0px;
+      justify-content: center;
+    }
+
+    #persona3text, #fonttext {
+      padding: 20px 20px 120px;
+      justify-content: left;
+    }
+
+    fieldset {
+      margin: 120px 10em 0px;
+    }
+}
+/*--------------------------------------------------------------------PRINT--------------------------------------------------------------------------*/
+
+@media print {
+  body {
+      background: white;
+  }
+
+  #footer, #heading, #form, .nextprev, .button {
+    display: none;
+  }
+
+  .hero {
+    width: 100vw;
+  }
+
+  #hero-b, #hero-b2 {
+    content:url('background_images/hero-b.png');
+    height: auto;
+  }
+
+  #hero-a, #hero-a2 {
+    content:url('background_images/hero.png');
+    height: auto;
+  }
+
+  #hero-austin {
+    content:url('background_images/austin.png');
+    height: auto;
+  }
+ 
+  #notebook, #computer, #wireframe, #flow, #screens {
+    width: 50%;
+  }
+
+}
+/*--------------------------------------------------------------------END--------------------------------------------------------------------------*/

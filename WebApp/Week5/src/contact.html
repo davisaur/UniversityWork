@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="js/contact.js"></script> 
+    <script src="js/index.js"></script> 
+	<title>Portfolio</title>
+</head>
+
+<body class="body"> 
+
+	<!-- Top Nav -->	
+
+	<header id="heading"> 
+		<a class="logo" href="index.html">Portfolio</a>
+		<div class="topnav" id="myTopnav">
+			<a href="contact.html">Contact</a>	
+				<div class="dropdown">
+					<button class="dropbtn">Work 
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="groupchat.html">Group.Chat</a>
+						<a href="babysteps.html">BabySteps</a>
+					</div>
+				</div> 
+			<a id="headingtop" href="javascript:void(0);" style="font-size:15px;" class="icon" >&#9776;</a>
+		</div>
+	</header>
+				
+
+	<!-- Banner --> 
+
+	<div class="hero" id="hero-austin"> 
+	</div>
+
+
+	<!-- Bio -->
+
+	<article class="centertext" id="profiletext">
+		<h1>Hello There!</h1> 
+		<p class="centersubtext">My name is Example and I am a designer from Austin, Texas! 
+			Though traditionally trained in industrial design, I am currently working towards 
+			my master's in User Experience Design at the University of Brighton.
+			I am currently seeking new opportunities and am open to relocating nationally or 
+			internationally. If you would like to learn more, or if you have any additional 
+			comments, please feel free to contact me through the form below.
+		</p>
+	</article> 
+
+
+	<!-- References -->
+
+	<article class="help" id="references">
+		<h1>Image + Font References</h1> 
+		<p id="referencetext">CoinViewApp. (2018). Black iPhone with Computer. Unslpash.com. Retrieved from https://unsplash.com/photos/o5OGVa1hfwY <br />
+			Flint, A. (2015). Sketchbook MockUps PSD #2. GraphicBurger.com. Retrieved from https://graphicburger.com/sketchbook-mockups-psd-2/ <br />
+			GraphicBurger. (2013). Perspective App Screens Mock-Up. GraphicBurger.com. Retrieved from https://graphicburger.com/perspective-app-screens-mock-up/ <br />
+			GUIKitPoint. (2019). iPhone X Clay App Mockup Dark. UI8.net. Retrieved from https://ui8.net/products/iphone-x-clay-app-mockup-dark <br />
+			Jackson, T. (2019). Woman Wearing Eyeglasses. Pexels.com. Retrieved from https://www.pexels.com/photo/woman-wearing-eyeglasses-773371/ <br />
+			Latovich, T. (2019). Black Iphone 7 on Brown Table. Pexels.com, (3885px x 2857px). Retrieved from https://www.pexels.com/photo/black-iphone-7-on-brown-table-699122/ <br />
+			Mars, B. (2019). Woman In Collared Shirt. Pexels.com. Retrieved from https://www.pexels.com/photo/women-s-white-and-black-button-up-collared-shirt-774909/ <br />
+			Melo, I. (2019). Portrait Photo of Smiling Man with His Arms Crossed Standing In Front of White Wall. Pexels.com. Retrieved from https://www.pexels.com/photo/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-in-front-of-white-wall-2379004/ <br />
+			Morillo, C. (2019). Woman Standing Near Whiteboard. Pexels.com. Retrieved from https://www.pexels.com/photo/adult-african-american-afro-black-female-1181519/ <br />
+			Pixabay. (2019). Man Smiling Behind Wall. Pexels.com. Retrieved from https://www.pexels.com/photo/adult-beard-boy-casual-220453/ <br />
+			Robertson, C. (2019). Roboto. Fonts.Google.com. Retrieved from https://fonts.google.com/specimen/Roboto <br />
+			ShowItBetter. (2016). Pregnant woman using iPhone 6. CreativeMarket.com. Under personal license. Retrieved from https://creativemarket.com/show.it. better/508065-Pregnant-woman-using-iPhone-6?u <br />
+			Xavier, D. (2019). Woman Wearing Black Eyeglasses. Pexels.com. Retrieved from https://www.pexels.com/photo/woman-wearing-black-eyeglasses-1239291/ <br />
+			YTCount. (2019). Portrait iPhone with Computer. Unsplash.com. Retrieved from https://unsplash.com/photos/tvzykmBf3r0 <br />
+		</p>
+	</article> 
+
+
+	<!-- Form -->
+
+	<div id="form">
+
+		<div id="contact"> 
+
+			<form>
+			<fieldset>
+
+				<legend>Leave a message and I'll contact you shortly!</legend>
+
+				<label for="email">Email*</label>
+				<span id="hint_email" class="hint"> - please enter your email address</span>
+				<input id="email" type="email" />
+
+				<label for="subject">Subject*</label>
+				<span id="hint_subject" class="hint"> - please enter a subject line</span>
+				<input id="subject" type="text" />
+
+				<label for="message">Message*</label>
+				<span id="hint_message" class="hint"> - please enter a message</span>
+				<textarea id="message"></textarea>
+
+				<input id="submitbutton" type="submit" value="Send Message" />
+
+			</fieldset>
+			</form>
+
+		</div>
+		
+
+		<!-- Loading -->
+
+		<div id="loading"> 
+			<img src="images/loading.png" alt="loading icon">
+		</div>
+		
+
+		<!-- Success -->
+
+		<div id="success"> 
+			<p>Thank you!</p>
+			<p><a id="reset_success" href="#">Send another message</a></p> 
+		</div>
+		
+
+		<!-- Error -->
+
+		<div id="error"> 
+			<p id= "errortext">Oops - something went wrong</p>
+			<p><a id="reset_error" href="#">Try again</a></p> 
+		</div>		
+
+	</div>
+
+
+	<!-- Footer -->
+
+	<footer id="footer"> <!-- Needs id for CSS grid -->
+		<article>
+			<h2>Email: example@gmail.com</h2>
+			<h2>Phone: +44 1234 567890</h2>
+			<a href="contact.html"><h2>View Image References</h2></a>
+		</article> 
+	</footer>
+
+</body>
+</html>
