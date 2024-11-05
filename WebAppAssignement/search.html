@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="config.js"></script>
     <div class="menu">
         <div class="logo"></div>
         <div class="search">
@@ -22,14 +23,23 @@
 
     <div class="container">
         <div class="map">
-            <iframe
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmFNNnNElOWb8A34LTaWLsRVSRKhwMVdQ
-                    &q=University+of+Brighton,Brighton+and+Hove,UK">
-            </iframe>
+            <script>
+                // Wait for the DOM to be fully loaded
+                document.addEventListener("DOMContentLoaded", function() {
+                    // Create an iframe element
+                    const iframe = document.createElement("iframe");
+                    iframe.style.border = "0";
+                    iframe.setAttribute("loading", "lazy");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+        
+                    // Set the src attribute using the stored API key and query parameters
+                    iframe.src = `https://www.google.com/maps/embed/v1/place?key=${googleMapsApiKey}&q=University+of+Brighton,Brighton+and+Hove,UK`;
+        
+                    // Append the iframe to the map container
+                    document.getElementById("map-container").appendChild(iframe);
+                });
+            </script>
         </div>
         <div class="results">
             <!-- RESULTS BEGIN HERE -->
